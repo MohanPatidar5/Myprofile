@@ -1,99 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohan Patidar - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mohan Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(18, 18, 62);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(4, 4, 32);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(153, 153, 153);
+      font-size: 1.01rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      margin: 80px 0;
+      font-size: 2.2rem;
+
+    }
+
+    .purple {
+      color: rgb(170, 107, 228);
+    }
+  </style>
 </head>
+
 <body>
-  <div class="container">
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-      </ul>
+  <header>
+    <nav>
+      <div class="left">Mohan's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">About Me</a></li>
+          <li><a href="/">Experience</a></li>
+          <li><a href="/">Education</a></li>
+          <li><a href="/">Project</a></li>
+          <li><a href="/">Skills</a></li>
+          <li><a href="/">Contact Me</a></li>
+
+        </ul>
+      </div>
     </nav>
+  </header>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short description about yourself and your interests.</p>
-      </section>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My Name is <span class="purple">Mohan</span>
+        <div>And I'm a Passionate </div>
+        <span id="element"></span>
+      </div>
+    </section>
+  </main>
+  <!-- Element to contain animated typing -->
 
-      <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <h3>Job Title</h3>
-            <h4>Company Name</h4>
-            <p>Start Date - End Date</p>
-            <p>Description of responsibilities and achievements.</p>
-          </li>
-        </ul>
-      </section>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-      <section id="education">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <h3>Degree</h3>
-            <h4>University Name</h4>
-            <p>Graduation Year</p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
-        </ul>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <h3>Project Name</h3>
-            <p>A short description of the project.</p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="awards">
-        <h2>Awards</h2>
-        <ul>
-          <li>
-            <h3>Award Name</h3>
-            <h4>Awarding Institution</h4>
-            <p>Year Awarded</p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="certificates">
-        <h2>Certificates</h2>
-        <ul>
-          <li>
-            <h3>Certificate Name</h3>
-            <h4>Issuing Institution</h4>
-            <p>Year Awarded</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 Your Name</p>
-    </footer>
-  </div>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'DevOps'],
+      typeSpeed: 100,
+    });
+  </script>
 </body>
+
 </html>
