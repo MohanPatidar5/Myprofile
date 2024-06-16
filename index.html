@@ -2,119 +2,362 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohan Profile</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
 
-    body {
-      background-color: rgb(18, 18, 62);
-      color: white;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 80px;
-      background-color: rgb(4, 4, 32);
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      list-style: none;
-      margin: 0 23px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-    }
-
-    nav ul li a:hover {
-      color: rgb(153, 153, 153);
-      font-size: 1.01rem;
-    }
-
-    .left {
-      font-size: 1.5rem;
-    }
-
-    .firstSection {
-      display: flex;
-      justify-content: space-around;
-
-    }
-
-    .firstSection>div {
-      width: 30%;
-    }
-
-    .leftSection {
-      margin: 80px 0;
-      font-size: 2.2rem;
-
-    }
-
-    .purple {
-      color: rgb(170, 107, 228);
-    }
-  </style>
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="left">Mohan's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="/">About Me</a></li>
-          <li><a href="/">Experience</a></li>
-          <li><a href="/">Education</a></li>
-          <li><a href="/">Project</a></li>
-          <li><a href="/">Skills</a></li>
-          <li><a href="/">Contact Me</a></li>
+    <!-- HEADER content -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
 
-        </ul>
-      </div>
-    </nav>
-  </header>
+            </div>
 
-  <main>
-    <section class="firstSection">
-      <div class="leftSection">
-        Hi, My Name is <span class="purple">Mohan</span>
-        <div>And I'm a Passionate </div>
-        <span id="element"></span>
-      </div>
-    </section>
-  </main>
-  <!-- Element to contain animated typing -->
+            <div>
+                <a href="#" class="nav__logo"> Mohan Patidar</a>
+            </div>
 
-  <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active"> Home </a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link"> About Me </a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link"> Experience </a></li>
+                    <li class="nav__item"><a href="#skill" class="nav__link"> Skills </a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link"> Education </a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link"> Projects </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'DevOps'],
-      typeSpeed: 100,
-    });
-  </script>
+    <main class="l-main">
+        <!--==== HOME ====-->
+        <section class="home section" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="img/myself.png" alt="">
+                    </div>
+                    <h1 class="home__title">Mohan Patidar</h1>
+                    <span class="home__profession">DevOps Engineer @Nokia</span>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/mohanpatidar5/" class="home__social-link"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/MohanPatidar5" class="home__social-link"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                    <a download="" href="#" class="button home__button"> Download Resume</a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==== ABOUT ====-->
+        <section class="about section" id="about">
+            <div class="about__container bd-grid">
+                <h2 class="section-title">About Me</h2>
+                <div class="about__data">
+                    <p class="about__description">
+                        I'm an experienced DevOps engineer with more than three years of practical experience in
+                        streamlining software development lifecycle through automation and collaboration.
+                        Proven ability to implement CI/CD pipelines, manage infrastructure, and troubleshoot complex
+                        issues. I am a team player with excellent communication skills, confidentiality, and a passion for continuous learning and improvement.
+                    </p>
+                </div>
+                <div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-user about__information-icon'></i>
+                            <span>Mohan Patidar</span>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bx-phone about__information-icon'></i>
+                            <span>+91 8827142662</span>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bx-envelope about__information-icon'></i>
+                            <span>mohanpatidar0011@gmail.com</span>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bx-current-location about__information-icon'></i>
+                            <span>MCECHS Layout Phase-1 Bangalore, 560077</span>
+                        </div>
+
+                        <div class="about__information-data">
+                            <i class='bx bxs-location-plus about__information-icon'></i>
+                            <span>Ujjain, Madhya Pradesh, 456010</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==== EXPERIENCE ====-->
+        <section class="experience section" id="experience">
+            <div class="work__experience__container bd-grid">
+                <h2 class="section-title">Work Experience</h2>
+
+                <!--============ work experience-1 ============-->
+                <div class="work__experience-data">
+                    <div class="work__experience-title">
+                        <i class='bx bxs-briefcase work__experience-icon'></i>
+                        <h3>DevOps Application Lead Developer @Nokia</h3>
+                    </div>
+
+                    <span class="work__experience-year">Jul’2022 – Present</span>
+                    <ul class="work__experience-description">
+
+                        <li>Developed a reusable automation framework for testing and validating DevOps applications
+                            across various cloud platforms. This framework improves efficiency, reduces testing
+                            time, and aligns test scenarios with cloud services for all DevOps applications.</li>
+
+                        <li>Added new features to existing Apache Spark component, automated comprehensive test
+                            cases using the radish framework to ensure the quality and reliability of the new
+                            functionalities.</li>
+                    </ul>
+                </div>
+
+                <!--============ work experience-2 ============-->
+                <div class="work__experience-data">
+                    <div class="work__experience-title">
+                        <i class='bx bxs-briefcase work__experience-icon'></i>
+                        <h3>Senior Software Engineer @Nokia</h3>
+                    </div>
+
+                    <span class="work__experience-year">Jul’2021 – Jun’2022</span>
+                    <ul class="work__experience-description">
+
+                        <li>Developed a reusable automation framework for testing and validating DevOps applications
+                            across various cloud platforms. This framework improves efficiency, reduces testing
+                            time, and aligns test scenarios with cloud services for all DevOps applications.</li>
+
+                        <li>Added new features to existing Apache Spark component, automated comprehensive test
+                            cases using the radish framework to ensure the quality and reliability of the new
+                            functionalities.</li>
+                    </ul>
+                </div>
+
+                <!--============ work experience-3 ============-->
+                <div class="work__experience-data">
+                    <div class="work__experience-title">
+                        <i class='bx bxs-briefcase work__experience-icon'></i>
+                        <h3>Graduate Engineer Trainee @Nokia</h3>
+                    </div>
+
+                    <span class="work__experience-year">Aug’2020 – Jun’2021</span>
+                    <ul class="work__experience-description">
+
+                        <li>Developed a reusable automation framework for testing and validating DevOps applications
+                            across various cloud platforms. This framework improves efficiency, reduces testing
+                            time, and aligns test scenarios with cloud services for all DevOps applications.</li>
+
+                        <li>Added new features to existing Apache Spark component, automated comprehensive test
+                            cases using the radish framework to ensure the quality and reliability of the new
+                            functionalities.</li>
+                    </ul>
+                </div>
+
+                <!--============ work experience-4 ============-->
+                <div class="work__experience-data">
+                    <div class="work__experience-title">
+                        <i class='bx bxs-briefcase work__experience-icon'></i>
+                        <h3>Student Intern @Nokia</h3>
+                    </div>
+
+                    <span class="work__experience-year">Jan’2020 – Jun’2020</span>
+                    <ul class="work__experience-description">
+
+                        <li>Developed a reusable automation framework for testing and validating DevOps applications
+                            across various cloud platforms. This framework improves efficiency, reduces testing
+                            time, and aligns test scenarios with cloud services for all DevOps applications.</li>
+
+                        <li>Added new features to existing Apache Spark component, automated comprehensive test
+                            cases using the radish framework to ensure the quality and reliability of the new
+                            functionalities.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==== SKILLS ====-->
+        <section class="skills section" id="skill">
+            <div class="skills__container bd-grid">
+                <h2 class="section-title">My Skills</h2>
+
+                <!--==== Languages ====-->
+
+                <div class="skills__content">
+                    <h3 class="about__information-title">Languages</h3>
+                    <div class="skills-data">
+                        <button class="skill-btn">C</button>
+                        <button class="skill-btn">C++</button>
+                        <button class="skill-btn">Python</button>
+                        <button class="skill-btn">R Markdown</button>
+                        <button class="skill-btn">GO (Basic)</button>
+                    </div>
+                </div>
+                <!--==== Relevant Courses ====-->
+
+                <div class="skills__content">
+                    <h3 class="about__information-title">Relevant Courses</h3>
+                    <div class="skills-data">
+                        <button class="skill-btn">OOPS</button>
+                        <button class="skill-btn">OS</button>
+                        <button class="skill-btn">DBMS</button>
+                        <button class="skill-btn">Data Structure and Algorithm</button>
+                    </div>
+                </div>
+
+                <!--==== Tools/Frameworks ====-->
+
+                <div class="skills__content">
+                    <h3 class="about__information-title">Tools/Frameworks</h3>
+                    <div class="skills-data">
+                        <button class="skill-btn">Git</button>
+                        <button class="skill-btn">Gerrit</button>
+                        <button class="skill-btn">Kubernetes</button>
+                        <button class="skill-btn">Docker</button>
+                        <button class="skill-btn">Helm</button>
+                        <button class="skill-btn">Jenkins</button>
+                        <button class="skill-btn">Ansible</button>
+                        <button class="skill-btn">Apache Spark</button>
+                        <button class="skill-btn">Hadoop (Basic)</button>
+                        <button class="skill-btn">Hive (Basic)</button>
+                        <button class="skill-btn">Radish framework</button>
+                        <button class="skill-btn">Vue.js</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==== EDUCATIONS ====-->
+        <section class="education section" id="education">
+            <div class="education__container bd-grid">
+                <h2 class="section-title">My Education</h2>
+
+                <!--==== Post Graduation ====-->
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">July 2017 - August 2020</h3>
+                        <span class="education__university"><a href="https://www.nitk.ac.in/">National Institute of
+                                Technology Karnataka, Surathkal</a></span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Master of Computer Applications</h3>
+                        <span class="education__specialty">Computer Science Engineering</span>
+                        <span class="education__percentage">CGPA: 7.8</span>
+                    </div>
+                </div>
+
+                <!--==== Graduation ====-->
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">August 2013 - June 2016</h3>
+                        <span class="education__university"><a href="https://vikramuniv.ac.in/"> Vikram University
+                                Ujjain </a></span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+                    <div>
+                        <h3 class="education__race">Bachelor of Computer Science</h3>
+                        <span class="education__specialty">Computer Science</span>
+                        <span class="education__percentage">Percentage: 61.3 %</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--==== PROJECTS ====-->
+        <section class="works section" id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="works__container bd-grid">
+
+                <div class="works__img">
+                    <img src="img/FaceRecognition.jpg" alt="">
+                    <div class="works__data">
+                        <a href="https://github.com/MohanPatidar5/FaceRecognition" class="works__link"><i
+                                class='bx bx-link'></i></a>
+                        <span class="works__title">FaceRecognition</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="img/GymManagement.jpg" alt="">
+                    <div class="works__data">
+                        <a href="https://github.com/MohanPatidar5/GymManagement" class="works__link"><i
+                                class='bx bx-link'></i></a>
+                        <span class="works__title">GymManagement</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER content -->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">A Recipe for Success</h1>
+            <p class="footer__description">“THE ONLY WAY TO DO GREAT WORK IS TO LOVE WHAT YOU DO” :- Steve Jobs</p>
+            <div class="footer__social">
+                <a href="#" class="footer__link">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </div>
+
+            <p class="footer__copy">All right reserved by Bedimcode - 2020</p>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
+
 </body>
 
 </html>
