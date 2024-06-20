@@ -52,9 +52,9 @@
                     <h1 class="home__title">Mohan Patidar</h1>
                     <span class="home__profession">DevOps Engineer @Nokia</span>
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/mohanpatidar5/" class="home__social-link"><i
+                        <a href="https://www.linkedin.com/in/mohanpatidar5/" target="_blank" class="home__social-link"><i
                                 class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/MohanPatidar5" class="home__social-link"><i
+                        <a href="https://github.com/MohanPatidar5" target="_blank" class="home__social-link"><i
                                 class='bx bxl-github'></i></a>
                         <a href="#" class="home__social-link"><i class='bx bxl-instagram'></i></a>
                     </div>
@@ -269,7 +269,7 @@
                 <div class="education__content">
                     <div>
                         <h3 class="education__year">July 2017 - August 2020</h3>
-                        <span class="education__university"><a href="https://www.nitk.ac.in/">National Institute of
+                        <span class="education__university"><a href="https://www.nitk.ac.in/" target="_blank">National Institute of
                                 Technology Karnataka, Surathkal</a></span>
                     </div>
                     <div class="education__time">
@@ -288,7 +288,7 @@
                 <div class="education__content">
                     <div>
                         <h3 class="education__year">August 2013 - June 2016</h3>
-                        <span class="education__university"><a href="https://vikramuniv.ac.in/"> Vikram University
+                        <span class="education__university"><a href="https://vikramuniv.ac.in/" target="_blank"> Vikram University
                                 Ujjain </a></span>
                     </div>
                     <div class="education__time">
@@ -315,7 +315,7 @@
                 <div class="works__img">
                     <img src="img/FaceRecognition.jpg" alt="">
                     <div class="works__data">
-                        <a href="https://github.com/MohanPatidar5/FaceRecognition" class="works__link"><i
+                        <a href="https://github.com/MohanPatidar5/FaceRecognition" target="_blank" class="works__link"><i
                                 class='bx bx-link'></i></a>
                         <span class="works__title">FaceRecognition</span>
                     </div>
@@ -324,7 +324,7 @@
                 <div class="works__img">
                     <img src="img/GymManagement.jpg" alt="">
                     <div class="works__data">
-                        <a href="https://github.com/MohanPatidar5/GymManagement" class="works__link"><i
+                        <a href="https://github.com/MohanPatidar5/GymManagement" target="_blank" class="works__link"><i
                                 class='bx bx-link'></i></a>
                         <span class="works__title">GymManagement</span>
                     </div>
